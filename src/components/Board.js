@@ -3,13 +3,18 @@ import PropTypes from 'prop-types';
 
 import Pixel from './Pixel';
 
-
+const rStyle = {
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
+};
 
 const Board = ({board}) => (
     <div>
         {board.map( (arr, j) => {
             return (
-                <div key={j}>
+                <div style={rStyle} key={j}>
                     {arr.map( (ele, i) => <Pixel key={i} status={ele} /> )}
                 </div>
             );
