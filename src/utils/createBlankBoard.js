@@ -1,4 +1,4 @@
-export const createBlankBoard = (maxR, maxC) => {
+const createBlankBoard = (maxR, maxC) => {
     let board = [];
     for(let i = 0; i < maxR; i++){
         let temp = [];
@@ -10,3 +10,5 @@ export const createBlankBoard = (maxR, maxC) => {
     }
     return board;
 };
+
+export default createBlankBoard;

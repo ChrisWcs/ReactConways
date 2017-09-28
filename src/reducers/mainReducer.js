@@ -1,5 +1,5 @@
 import { ADVANCE } from '../actions/actions';
-import { createBlankBoard } from '../utils/utils';
+import createBlankBoard from '../utils/createBlankBoard';
 import spaceReducer from './spaceReducer';
 
 const mainReducer = (state, action) => {

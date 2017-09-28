@@ -52,10 +52,10 @@ const spaceReducer = ( oldState, newState, r, c ) => {
     } else if( neighbors > 3 && oldState[r][c]) {
         state[r][c] = false;
 
-    } else {
+    } else if( neighbors === 3 && (!oldState[r][c]) ){
         state[r][c] = true;
     }
-    
+
     return state;
 };
 
