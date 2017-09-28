@@ -1,11 +1,8 @@
 import React from 'react';
 import Board from '../components/Board';
+import createRandomBoard from '../utils/createRandomBoard';
 
-const data = [
-    [ false, false, true ],
-    [ false, true, false ],
-    [ true, false, false ],
-];
+const data = createRandomBoard(3,3);
 
 const App = () => (
     <Board board={data}/>
