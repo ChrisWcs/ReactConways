@@ -1,0 +1,30 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+
+const style = {
+    width: 25,
+    height: 25,
+    border: "solid 1px black",
+};
+
+const aStyle = {
+    background: "green"
+};
+
+const dStyle = {
+    background: "red"
+};
+
+const Pixel = ({status}) => (
+    <div style={{
+            ...style,
+            ...(status ? aStyle : dStyle),
+            }}
+    />        
+);
+
+Pixel.propTypes = {
+    status: PropTypes.bool
+};
+
+export default Pixel;
