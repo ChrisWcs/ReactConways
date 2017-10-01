@@ -1,6 +1,4 @@
 import React from 'react';
-import { createStore } from 'redux';
-import { Provider } from 'react-redux';
 
 class App extends React.Component {
 
@@ -11,15 +9,23 @@ class App extends React.Component {
             id: ""
         };
 
+        this.startInterval = this.startInterval.bind(this);
+        this.endInterval = this.endInterval.bind(this);
+    }
+
+    startInterval() {
+
+    }
+
+    endInterval() {
 
     }
     
     render() {
-        <Provider>
+        return (
             <div>
-                
             </div>
-        </Provider>
+        );
     }
 }
 
