@@ -4,6 +4,8 @@ This project is a Conway's Game of Life simulator. It will generate a random boa
 
 - [learn more about Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
 
+- [Demo](http://conwaysreactlife.surge.sh/)
+
 ## Installation
 
 - git clone
