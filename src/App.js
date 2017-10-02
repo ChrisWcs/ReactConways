@@ -2,6 +2,7 @@ import React from 'react';
 
 import Board from './components/Board';
 import Title from './components/Title';
+import Instructions from './components/Instructions';
 
 import boardReducer from './reducers/boardReducer';
 
@@ -83,7 +84,10 @@ class App extends React.Component {
                     { this.state.isRunning ? <button style={styleButton} onClick={this.endInterval}>End</button> 
                                            : <button style={styleButton} onClick={this.startInterval}>Start</button>}
                     <button style={styleButton} onClick={this.reset}>Reset</button>
-                </div>   
+                </div>
+                <div style={styleDivRow}>
+                    <Instructions />
+                </div>
             </div>
         );
     }

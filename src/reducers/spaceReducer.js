@@ -4,7 +4,7 @@ const addToTotal = ( r, c, board) => {
     } else {
         return 0;
     }
-}
+};
 
 const checkSpaces = ( r, c, rMax, cMax, board ) => {
     let neighbors = 0;

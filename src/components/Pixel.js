@@ -8,11 +8,11 @@ const style = {
 };
 
 const aStyle = {
-    background: "green"
+    background: "#00BCD4"
 };
 
 const dStyle = {
-    background: "red"
+    background: "#B71C1C"
 };
 
 const Pixel = ({status}) => (
